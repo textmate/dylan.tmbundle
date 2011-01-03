@@ -13,6 +13,7 @@
 |case|select
 |local method|method
 |for|while|until
+|block
 |(  "(\\.|[^"])*+"         # eat a double quoted string
 | '(\\.|[^'])*+'        # eat a single quoted string
 |   [^#"']                # eat all but comments and strings
@@ -35,7 +36,7 @@
 </string>
 	<key>foldingStopMarker</key>
 	<string>(?x)
-(   ^\s*+end.*;$
+(   ^\s*+end.*$
 |   [\/\/] .*? \(end\) \s*+ $    # Sune’s special marker
 |   ^\s*\/\/\s*\#endregion
 )</string>
